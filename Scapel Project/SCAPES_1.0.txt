@@ -1,0 +1,39 @@
+﻿dca array 10                              
+#declare array 
+dci index                                
+#declare variable index
+mov 0 index                                
+#set index to 0 
+L1: rdi $array+index                        
+#label 1 start 
+add 1 index                                
+#add 1 to index
+cmp index 10                                
+#compare index and 10 
+jls L1                                        
+#if less jump to l1
+prt array                                
+#print array
+dci max                                
+#declare max
+mov $array+0 max                        
+#mov the first element to max 
+mov 1 index                                
+#increment index
+L2: cmp max $array+index                
+#compare max with array 
+jmr L3                                        
+# if max is greater move to label 3
+mov $array+index max               
+#otherwise mov the value in the current index to max
+L3: add 1 index                        
+#increment index by 1 
+cmp index 10                                
+# compare the index to 10 (max index)
+jls L2                                        
+#if less than max index jump to label 2 
+# print the maximum is 
+prt max                                
+#print the value of max variable
+end
+#end

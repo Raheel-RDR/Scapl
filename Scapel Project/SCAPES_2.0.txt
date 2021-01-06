@@ -1,0 +1,46 @@
+﻿dci a                      
+#declare variable a
+dci b                         
+#declare variable b
+dci c                        
+#declare variable c
+dci d                        
+#declare variable d
+rdi a                         
+#read variable a from user 
+rdi b                        
+#read variable b from user 
+rdi c                        
+#read variable c from user 
+rdi d                        
+#read variable d from user 
+L1: cmp a b                
+#compare variables a and b
+jls L2                        
+#if a is less than b jump to L2 
+jeq L2                        
+#if a is equal to b jump to L2 
+jmr end                
+#if b is more than a end the program 
+L2: cmp c d                
+#compare c and d 
+jls L3                        
+#if is c  less than d jump to L3 
+jeq L3                         
+#if is c equal to d jump to L3 
+jmr L4                        
+#if is c  more than d jump to L4
+L3: prt c                 
+#print c 
+add 2 c                 
+#increment c by 2 
+jmp L2                        
+#jump to L2
+L4: add 1 a                 
+#add 1 to a 
+mov 1 c                 
+#mov 1 to c 
+mov 10 d                 
+#mov 10 to d 
+jmp L1                 
+#jump back to L1

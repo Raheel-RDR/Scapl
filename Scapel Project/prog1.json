@@ -1,0 +1,316 @@
+{
+    "program": [
+        {
+            "Arguments": {
+                "arg1": "array",
+                "arg2": "10"
+            },
+            "Label": "",
+            "Operand": "dca"
+        },
+        {
+            "Arguments": {
+                "arg1": "declare array ",
+                "arg2": ""
+            },
+            "Label": "",
+            "Operand": "#"
+        },
+        {
+            "Arguments": {
+                "arg1": "index",
+                "arg2": ""
+            },
+            "Label": "",
+            "Operand": "dci"
+        },
+        {
+            "Arguments": {
+                "arg1": "declare variable index",
+                "arg2": ""
+            },
+            "Label": "",
+            "Operand": "#"
+        },
+        {
+            "Arguments": {
+                "arg1": "0",
+                "arg2": "index"
+            },
+            "Label": "",
+            "Operand": "mov"
+        },
+        {
+            "Arguments": {
+                "arg1": "set index to 0 ",
+                "arg2": ""
+            },
+            "Label": "",
+            "Operand": "#"
+        },
+        {
+            "Arguments": {
+                "arg1": "$array+index",
+                "arg2": ""
+            },
+            "Label": "L1",
+            "Operand": "rdi"
+        },
+        {
+            "Arguments": {
+                "arg1": "label 1 start ",
+                "arg2": ""
+            },
+            "Label": "",
+            "Operand": "#"
+        },
+        {
+            "Arguments": {
+                "arg1": "1",
+                "arg2": "index"
+            },
+            "Label": "",
+            "Operand": "add"
+        },
+        {
+            "Arguments": {
+                "arg1": "add 1 to index",
+                "arg2": ""
+            },
+            "Label": "",
+            "Operand": "#"
+        },
+        {
+            "Arguments": {
+                "arg1": "index",
+                "arg2": "10"
+            },
+            "Label": "",
+            "Operand": "cmp"
+        },
+        {
+            "Arguments": {
+                "arg1": "compare index and 10 ",
+                "arg2": ""
+            },
+            "Label": "",
+            "Operand": "#"
+        },
+        {
+            "Arguments": {
+                "arg1": "L1",
+                "arg2": ""
+            },
+            "Label": "",
+            "Operand": "jls"
+        },
+        {
+            "Arguments": {
+                "arg1": "if less jump to l1",
+                "arg2": ""
+            },
+            "Label": "",
+            "Operand": "#"
+        },
+        {
+            "Arguments": {
+                "arg1": "array",
+                "arg2": ""
+            },
+            "Label": "",
+            "Operand": "prt"
+        },
+        {
+            "Arguments": {
+                "arg1": "print array",
+                "arg2": ""
+            },
+            "Label": "",
+            "Operand": "#"
+        },
+        {
+            "Arguments": {
+                "arg1": "max",
+                "arg2": ""
+            },
+            "Label": "",
+            "Operand": "dci"
+        },
+        {
+            "Arguments": {
+                "arg1": "declare max",
+                "arg2": ""
+            },
+            "Label": "",
+            "Operand": "#"
+        },
+        {
+            "Arguments": {
+                "arg1": "$array+0",
+                "arg2": "max"
+            },
+            "Label": "",
+            "Operand": "mov"
+        },
+        {
+            "Arguments": {
+                "arg1": "mov the first element to max ",
+                "arg2": ""
+            },
+            "Label": "",
+            "Operand": "#"
+        },
+        {
+            "Arguments": {
+                "arg1": "1",
+                "arg2": "index"
+            },
+            "Label": "",
+            "Operand": "mov"
+        },
+        {
+            "Arguments": {
+                "arg1": "increment index",
+                "arg2": ""
+            },
+            "Label": "",
+            "Operand": "#"
+        },
+        {
+            "Arguments": {
+                "arg1": "max",
+                "arg2": "$array+index"
+            },
+            "Label": "L2",
+            "Operand": "cmp"
+        },
+        {
+            "Arguments": {
+                "arg1": "compare max with array ",
+                "arg2": ""
+            },
+            "Label": "",
+            "Operand": "#"
+        },
+        {
+            "Arguments": {
+                "arg1": "L3",
+                "arg2": ""
+            },
+            "Label": "",
+            "Operand": "jmr"
+        },
+        {
+            "Arguments": {
+                "arg1": " if max is greater move to label 3",
+                "arg2": ""
+            },
+            "Label": "",
+            "Operand": "#"
+        },
+        {
+            "Arguments": {
+                "arg1": "$array+index",
+                "arg2": "max"
+            },
+            "Label": "",
+            "Operand": "mov"
+        },
+        {
+            "Arguments": {
+                "arg1": "otherwise mov the value in the current index to max",
+                "arg2": ""
+            },
+            "Label": "",
+            "Operand": "#"
+        },
+        {
+            "Arguments": {
+                "arg1": "1",
+                "arg2": "index"
+            },
+            "Label": "L3",
+            "Operand": "add"
+        },
+        {
+            "Arguments": {
+                "arg1": "increment index by 1 ",
+                "arg2": ""
+            },
+            "Label": "",
+            "Operand": "#"
+        },
+        {
+            "Arguments": {
+                "arg1": "index",
+                "arg2": "10"
+            },
+            "Label": "",
+            "Operand": "cmp"
+        },
+        {
+            "Arguments": {
+                "arg1": " compare the index to 10 (max index)",
+                "arg2": ""
+            },
+            "Label": "",
+            "Operand": "#"
+        },
+        {
+            "Arguments": {
+                "arg1": "L2",
+                "arg2": ""
+            },
+            "Label": "",
+            "Operand": "jls"
+        },
+        {
+            "Arguments": {
+                "arg1": "if less than max index jump to label 2 ",
+                "arg2": ""
+            },
+            "Label": "",
+            "Operand": "#"
+        },
+        {
+            "Arguments": {
+                "arg1": "The maximum is",
+                "arg2": ""
+            },
+            "Label": "",
+            "Operand": "prt"
+        },
+        {
+            "Arguments": {
+                "arg1": " print the maximum is ",
+                "arg2": ""
+            },
+            "Label": "",
+            "Operand": "#"
+        },
+        {
+            "Arguments": {
+                "arg1": "max",
+                "arg2": ""
+            },
+            "Label": "",
+            "Operand": "prt"
+        },
+        {
+            "Arguments": {
+                "arg1": "print the value of max variable",
+                "arg2": ""
+            },
+            "Label": "",
+            "Operand": "#"
+        },
+        {
+            "Arguments": {
+                "arg1": "",
+                "arg2": ""
+            },
+            "Label": "",
+            "Operand": "end"
+        }
+    ]
+}
